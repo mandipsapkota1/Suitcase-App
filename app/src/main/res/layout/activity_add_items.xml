@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:padding="10dp"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".Add_items">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arbutus"
+        android:text="Add Item Page"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/item_image"
+        android:layout_width="106dp"
+        android:layout_marginTop="18dp"
+        android:layout_height="106dp"
+        android:src="@drawable/item"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="  Enter item name"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/lavender_border"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:inputType="text"
+        android:id="@+id/add_item_name"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint=" Enter item price"
+        android:background="@drawable/lavender_border"
+        android:textSize="22sp"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:id="@+id/add_item_price"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="60dp"
+        android:hint=" Enter item description"
+        android:textSize="22sp"
+        android:inputType="text"
+        android:background="@drawable/lavender_border"
+        android:textColor="@color/black"
+        android:id="@+id/add_item_description"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:text="Add Item"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>
